@@ -2,6 +2,7 @@
 if (!defined('IN_XIAOCMS')) exit();
 return array (
   'site_name' => '优悦婚礼堂',
+  'site_theme' => 'default',
   'site_mobile' => '0',
   'wap' => 'm',
   'site_title' => '优悦婚礼堂',
@@ -33,5 +34,5 @@ return array (
   'smtpuser' => 'admin',
   'smtppass' => 'admin',
   'smtpemailto' => '',
-  'rand_code' => '1342813870d032b5d10f00b811c9e062',
+  'rand_code' => 'fbaf66d62e0f82a0493c3c88bdbeea5a',
 );
