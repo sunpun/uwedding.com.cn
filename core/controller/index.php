@@ -185,9 +185,12 @@ class index extends Base {
                     $smtp->sendmail($smtpemailto, $smtpusermail, $mailsubject, $mailbody, $mailtype);
                 }
 
-                $this->show_message($data['status'] ? '提交成功' : '提交成功，等待审核', 1, $gobackurl);
+                //$this->show_message($data['status'] ? '提交成功' : '提交成功，等待审核', 1, $gobackurl);
+                $result = array('info' => '提交成功','status' => 1,'url' => $url);
+				echo json_encode($result);exit();
 			} else {
-			    $this->show_message('提交失败',2,1);
+			    $result = array('info' => '提交失败','status' => 0,'url' => $url);
+				echo json_encode($result);exit();
 			}
 		}
 	    $this->view->assign(array(
