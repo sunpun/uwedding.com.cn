@@ -1,7 +1,9 @@
+
 data/tplcache
 
 data/config
 
-data/cache
+data/cache/
 
 data/models/
+data/bakup/
