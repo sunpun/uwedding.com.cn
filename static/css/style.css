@@ -66,6 +66,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .FormL .title,.FormR .title{font-size: 16px;margin-bottom: 20px;color: #af616b;text-align: center;}
 .FormR .ipt-text{height: 26px;width: 242px;line-height: 26px;padding: 2px 12px;margin-bottom: 18px;border: 1px solid #f18d99;}
 .FormR .ipt-submit{width: 100%;height: 32px;margin-bottom: 18px;font-size: 14px;background: #f18d99;color: #fff;text-align: center;cursor: pointer;}
+
 .FormR .placeholder{height: 44px;line-height: 22px;}
 .FormR .link{text-align: center;}
 .FormR .link a{color: #a95660;font-size: 14px;}
@@ -83,3 +84,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .date-select .bottom > ul {position: relative;cursor: pointer;margin-left: -12px;}
 .date-select .bottom > ul li {float: left;padding: 20px 0;margin-left: 12px;border: 1px solid #a6937c;width: 80px;font-size: 28px;font-weight: bold;text-align: center;font-family: sans-serif;font-weight: bold;}
 #datepicker {position: absolute;left: 0;bottom: 0;z-index: 999;width: 100%;height: 100%;opacity: 0;filter: alpha(opacity=0); cursor: pointer;}
+
+.buttonLoading {
+  position: relative;
+  background-color: #bbb !important;
+  -webkit-transition: all 0.3s ease-in 0s;
+          transition: all 0.3s ease-in 0s;
+}
+.buttonLoading:after {
+  position: absolute;
+  content: '';
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("https://o00stodjk.qnssl.com/static/production/images/common/ajax-loader-8500ae97.gif") 50% 50% no-repeat;
+}
