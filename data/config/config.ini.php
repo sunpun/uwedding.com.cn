@@ -1,13 +1,12 @@
 <?php
 if (!defined('IN_XIAOCMS')) exit();
 return array (
-  'site_name' => 'XiaoCms企业建站版',
-  'site_theme' => 'default',
+  'site_name' => '优悦婚礼堂',
   'site_mobile' => '0',
   'wap' => 'm',
-  'site_title' => 'XiaoCms演示站',
-  'site_keywords' => 'xiaocms',
-  'site_description' => '欢迎使用xiaocms内容管理系统 官方网站：http://www.xiaocms.com',
+  'site_title' => '优悦婚礼堂',
+  'site_keywords' => '优悦婚礼堂',
+  'site_description' => '优悦婚礼堂',
   'site_status' => '1|正常
 2|头条
 3|推荐
@@ -34,5 +33,5 @@ return array (
   'smtpuser' => 'admin',
   'smtppass' => 'admin',
   'smtpemailto' => '',
-  'rand_code' => 'b956d782f8f56e7fbcb9b3efb27a5668',
+  'rand_code' => '1342813870d032b5d10f00b811c9e062',
 );
