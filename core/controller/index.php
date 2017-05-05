@@ -148,7 +148,7 @@ class index extends Base {
 				$this->db->setTableName($form_model['tablename'])->where('ip=?', $this->get_user_ip());
 				if (!empty($form_model['joinid'])) $this->db->where('cid=?', $cid);
 				$ipdata = $this->db->order('time DESC')->getOne('','','time');
-		        if (time() - $ipdata['time'] < $time) $this->show_message('同一IP在'. $form_model['setting']['form']['time'] .'分钟内不能重复提交',2,1);
+		        if (time() - $ipdata['time'] < $time) {echo json_encode(array('info' => '同一IP在'. $form_model['setting']['form']['time'] .'分钟内不能重复提交','status' => 0));}
 			}
 			if (!empty($form_model['setting']['form']['num']) && !empty($form_model['setting']['form']['post']) && $this->member_info ) {
 				$this->db->setTableName($form_model['tablename'])->where('userid=?', 1);
