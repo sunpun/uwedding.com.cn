@@ -254,12 +254,18 @@ function feastSubmit(){
           "data[zhuo]":table
         },
         cache: false,
-        success: function(data) {              
-            $('.J_step1').hide();
-            $('.J_step2').show();
+        success: function(data) {
+            if (data.status==1) {
+                $('.J_step1').hide();
+                $('.J_step2').show();
+            }else{
+                var msg = data.info? data.info :"网络延迟，请您一定要再试一试";
+                layer.msg(msg,function(){closePopup()});
+            }            
         },
         error: function(data){
-            layer.msg("网络延迟，请您一定要再试一试");
+            msg = data.info? data.info :"网络延迟，请您一定要再试一试";
+            layer.msg(msg,closePopup());
         },
         beforeSend:function(){
             $(".J_formBtn").addClass('buttonLoading');
