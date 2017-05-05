@@ -199,7 +199,7 @@ class index extends Base {
 		    'form_name' => $form_model['modelname'],
 	        'site_title'       => $form_model['modelname'] .' - ' . $this->site_config['site_name'],
 			'site_keywords'    => $this->site_config['site_keywords'], 
-			'site_description' => $this->site_config['site_description'].' - Powered by XiaoCms',
+			'site_description' => $this->site_config['site_description'],
 	    ));
 		$this->view->display($form_model['showtpl']);
 	}
